@@ -1,8 +1,11 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
+#include <iostream>
 
 int main(int argc, char *argv[])
 {
+    std::cout << "hello World" << std::endl;
+
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;

@@ -11,6 +11,10 @@ qt_standard_project_setup(REQUIRES 6.8)
 qt_add_executable(appSudoku_Game
     main.cpp
     Sudoku.h
+    Sudoku.cpp
+    SudokuCell.h
+    SudokuCell.cpp
+    Difficulty.h
 )
 
 qt_add_qml_module(appSudoku_Game
