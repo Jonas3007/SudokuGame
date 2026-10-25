@@ -10,6 +10,8 @@ class Sudoku {
     public:
     Sudoku();
     
+    bool checkIfMoveValid(int row, int col, int value);
+    void initializeBoard();
     void setDifficulty(Difficulty newDifficulty);
     Difficulty getDifficulty();
     bool checkIfCellOccupied(int row, int col);
@@ -19,5 +21,5 @@ class Sudoku {
     bool checkForWin();
     void setupBoard(int difficultyLevel[2]);
     int getBoardValue(int row, int col);
-    void setBoardValue(int row, int col, int value);
+    void setBoardValue(int row, int col, int value, bool isFixed);
 };

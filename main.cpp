@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
         &app,
         []() { QCoreApplication::exit(-1); },
         Qt::QueuedConnection);
-    engine.loadFromModule("Sudoku_Game", "Main");
+    engine.loadFromModule("Sudoku_Game", "Main");   
 
     return app.exec();
 }
